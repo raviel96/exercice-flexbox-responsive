@@ -1,6 +1,6 @@
 .container {
     width: 800px;
-    border: 1px solid black;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -12,6 +12,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 15px 0;
 }
 
 .logo img:hover, .logo h1:hover {
@@ -20,7 +21,7 @@ header {
 
 .logo h1 {
     color: #0087cc;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-left: 1%;
 }
 
@@ -49,13 +50,14 @@ header {
 /* Main */
 
 main {
+    margin: 0 auto;
     width: 80%;
 }
 
 .section-article {
     display: flex;
     justify-content: space-between;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 .section-article article {
@@ -106,6 +108,7 @@ main {
 footer {
     width: 100%;
     text-align: center;
+    margin: 5% 0 5% 0;
 }
 
 footer h2 {
@@ -135,6 +138,22 @@ footer h2 {
     filter: brightness(120%);
 }
 
+@media screen and (min-width:1940px) {
+    .container {
+        width: 100%;
+    }
 
+    .section-article article figure img  {
+        height: 20%;
+    }
+
+    .section-article>:nth-child(2) figure img {
+        height: 29%;
+    }
+
+    .section-article article {
+        /* height: 65%; */
+    }
+}
 
 
